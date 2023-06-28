@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
@@ -9,48 +10,51 @@
     <link rel="stylesheet" href="./stylesheets/media-query.css" />
     <script src="./script.js" defer></script>
     <title>Exploria |</title>
-  </head>
-  <body>
+</head>
+
+<body>
     <header>
-      <nav class="navbar">
-        <div class="logo_container">
-            <img src="./img/navbar_log.svg" alt="logo"/>
-        </div>
-        <div class="hack_navbar">
-            <div class=" nav_items_container">
-              <ul class="flex_center | nav_list">
-                <li class="list_item"><a href="">HOME</a></li>
-                <li class="list_item"><a href="">DESTINATIONS</a></li>
-                <li class="list_item"><a href="">PRICES</a></li>
-                <li class="list_item"><a href="">TESTIMONALS</a></li>
-              </ul>
-              <button class="btn schedule_btn">SCHEDULE NOW!</button>
+        <nav class="navbar">
+            <div class="logo_container">
+                <img src="./img/navbar_log.svg" alt="logo" />
             </div>
-        </div>
-      </nav>
-      <section class="hero_section">
-        <img
-          src="./img/hero_image.jpeg"
-          alt="hero section image"
-          class="hero_image"/>
-          <!-- <div class="black_shade"></div> -->
-          <div class="hero_title_container">
-            <div class="hero_title | hero_title_styling">
-                <h1 class="">UNLEASH <span id="small_title">the explorer in </span></h1>
-                <h1>YOURSELF</h1>
+            <div class="hack_navbar">
+                <div class=" nav_items_container">
+                    <ul class="flex_center | nav_list">
+                        <li class="list_item"><a href="">HOME</a></li>
+                        <li class="list_item"><a href="">DESTINATIONS</a></li>
+                        <li class="list_item"><a href="">PRICES</a></li>
+                        <li class="list_item"><a href="">TESTIMONALS</a></li>
+                    </ul>
+                    <button class="btn schedule_btn">SCHEDULE NOW</button>
+                </div>
             </div>
-            <div class="explore_btn_cont">
-                <button class="btn | explore_btn">EXPLORE <span>&rarr;</span></button>
+            <div class="hamburger_container">
+                <div class="bar top_bar"></div>
+                <div class="bar middle_bar"></div>
+                <div class="bar bottom_bar"></div>
             </div>
-            <div class="hero_text_cont">
+        </nav>
+        <section class="hero_section">
+            <img src="./img/hero_image.jpeg" alt="hero section image" class="hero_image" />
+            <!-- <div class="black_shade"></div> -->
+            <div class="hero_content_container | text_invisibility">
+                <div class="hero_first_content">
+                    <h1 class="hero_title | hero_title_styling">
+                        <p class="heading_extrabold">UNLEASH <span class="small_title">the explorer in </span></p>
+                        <p class="heading_extrabold">YOURSELF</p>
+                    </h1>
+                    <button class="btn flex_center | explore_btn">EXPLORE <img src="./img/right-lg.svg"
+                            alt="right arrow" class="right_arrow"></button>
+                </div>
                 <p class="hero_text">
                     Immerse yourself with different cultures and learn about world and its people...
                 </p>
             </div>
-          </div>
-      </section>
+        </section>
     </header>
     <main></main>
     <footer></footer>
-  </body>
+</body>
+
 </html>
