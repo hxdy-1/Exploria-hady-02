@@ -21,6 +21,7 @@
     /* transitions */
     --transition-1: 300ms ease-in-out;
     --transition-2: 500ms ease-in-out;
+    --transition-7: 1000ms ease-in-out;
 
 
     /* font weight*/
