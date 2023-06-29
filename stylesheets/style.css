@@ -113,13 +113,6 @@
     width: 30rem;
 }
 
-.heading_extrabold:nth-of-type(1),
-.heading_extrabold:nth-of-type(2),
-.explore_btn,
-.hero_text {
-    transition: transform var(--transition-7), opacity var(--transition-7);
-}
-
 .text_invisibility .heading_extrabold:nth-of-type(1) {
     transform: translateX(-100%);
     opacity: 0;
@@ -134,4 +127,23 @@
 .text_invisibility .hero_text {
     transform: translateY(100%);
     opacity: 0;
+}
+
+.heading_extrabold:nth-of-type(1),
+.heading_extrabold:nth-of-type(2) {
+    transition: transform var(--transition-7), opacity 2000ms ease-in-out;
+}
+
+.explore_btn,
+.hero_text {
+    transition: transform var(--transition-7), opacity 1500ms ease-in-out;
+}
+
+.heading_extrabold:nth-of-type(2) {
+    transition-delay: 400ms;
+}
+
+.explore_btn,
+.hero_text {
+    transition-delay: 700ms;
 }
