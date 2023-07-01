@@ -1,3 +1,11 @@
+.header {
+    position: relative;
+    height: 105vh;
+
+    /* Not willing to change the height as well as width of the image. Just width: 100%. But the image was overflowing in terms of height (out of the header). So: */
+    overflow: hidden;
+}
+
 .navbar {
     position: relative;
 
@@ -31,6 +39,101 @@
     font-weight: var(--fw-lighter);
 }
 
+/* NAVLINK HOVER EFFECT */
+
+/* .list_item a {
+    color: var(--primary-400);
+    padding: 7px 0;
+
+    position: relative;
+}
+
+.list_item a::before {
+    content: attr(data-hover);
+    color: #fff;
+    position: absolute;
+	-webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+	-moz-transition: -moz-transform 0.3s, opacity 0.3s;
+	transition: transform 0.3s, opacity 0.3s;
+	pointer-events: none;
+}
+
+.list_item a:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 2px;
+	background: #fff;
+	opacity: 0;
+	-webkit-transform: translateY(5px);
+	-moz-transform: translateY(5px);
+	transform: translateY(5px);
+	-webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+	-moz-transition: -moz-transform 0.3s, opacity 0.3s;
+	transition: transform 0.3s, opacity 0.3s;
+	pointer-events: none;
+}
+
+.list_item a:hover:before, .list_item a:focus:before {
+	opacity: 0;
+	-webkit-transform: translateY(-2px);
+	-moz-transform: translateY(-2px);
+	transform: translateY(-2px);
+}
+
+.list_item a:hover:after, .list_item a:focus:after {
+	opacity: 1;
+	-webkit-transform: translateY(0px);
+	-moz-transform: translateY(0px);
+	transform: translateY(0px);
+} */
+
+.list_item a {
+    padding-bottom: 3px;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+
+.list_item a:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    height: 3px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--primary-400);
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 0 50%;
+    transform-origin: 0 50%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.list_item a:hover:before, .list_item a:focus:before, .list_item a:active:before {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+    transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+}
+
+/* NAVLINK HOVER EFFECT END */
+
 .schedule_btn {
     background: var(--primary-400);
 }
@@ -54,6 +157,7 @@
     position: absolute;
     top: 35%;
     left: 5%;
+    /* Another way to achieve the same: Giving a left-top-bottom padding to the hero-section-container. So that the hero-text gets properly aligned. */
 
     overflow: hidden;
 }
@@ -109,8 +213,9 @@
 
 .hero_text {
     color: white;
-    opacity: .6;
+    opacity: .8;
     width: 30rem;
+    font-weight: bolder;
 }
 
 .text_invisibility .heading_extrabold:nth-of-type(1) {
@@ -146,4 +251,99 @@
 .explore_btn,
 .hero_text {
     transition-delay: 700ms;
+}
+
+/* STACKING SECTIONS: */
+
+.section_wrapper {
+    padding: 3rem;
+}
+
+.section {
+    flex-direction: column;
+}
+
+.section_title {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.stacking_container {
+    display: flex;
+    gap: 1rem;
+
+    height: min-content;
+    width: 100%;
+
+    padding: 1em 1em 4em;
+
+    /* background-color: black; */
+}
+
+.left_fixed {
+    position: sticky;
+    top: 1%;
+
+    height: 95vh;
+    width: 50%;
+
+    padding: 2em;
+}
+
+.left_fixed_styling {
+    background-color: var(--neutral-700);
+    background-image: url('../img/welcome-image-1.jpg');
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: hard-light;
+
+    text-align: center;
+
+    border-radius: 12px;
+
+    font-size: 1.5rem;
+    font-weight: 900;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+
+    transition: all var(--transition-2);
+}
+
+.right_scrolling_container {
+    width: 50%;
+    align-self: flex-start;
+}
+
+.welcome_card {
+    position: sticky;
+    top: -15%;   /* We're hiding each card so that the threshold (of Intersection observer) approves the disappearance of the current card. */
+
+    width: 100%;
+
+    padding: 5em;
+
+    background-color: var(--neutral-700);
+    background-image: var(--dark-linear-gradient);
+
+    border: 2px solid gray;
+    border-radius: 6px;
+
+    margin-bottom: 1rem;
+}
+
+.welcome_card-1 {
+    background-color: green;
+}
+
+.welcome_card-2 {
+    background-color: purple;
+    /* transform: translateY(1.5em); */
+}
+
+.welcome_card-3 {
+    /* transform: translateY(3em); */
+}
+
+.footer {
+    height: 100vh;
 }

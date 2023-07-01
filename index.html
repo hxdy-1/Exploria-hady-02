@@ -8,12 +8,13 @@
     <link rel="stylesheet" href="./stylesheets/util.css" />
     <link rel="stylesheet" href="./stylesheets/style.css" />
     <link rel="stylesheet" href="./stylesheets/media-query.css" />
-    <script src="./script.js" defer></script>
+    <script src="./js/script.js" defer></script>
+    <script src="./js/welcomeSection.js" defer></script>
     <title>Exploria |</title>
 </head>
 
 <body>
-    <header>
+    <header class="header">
         <nav class="navbar">
             <div class="logo_container">
                 <img src="./img/navbar_log.svg" alt="logo" />
@@ -21,10 +22,10 @@
             <div class="hack_navbar">
                 <div class=" nav_items_container">
                     <ul class="flex_center | nav_list">
-                        <li class="list_item"><a href="">HOME</a></li>
-                        <li class="list_item"><a href="">DESTINATIONS</a></li>
-                        <li class="list_item"><a href="">PRICES</a></li>
-                        <li class="list_item"><a href="">TESTIMONALS</a></li>
+                        <li class="list_item"><a href="#home" data-hover="HOME">HOME</a></li>
+                        <li class="list_item"><a href="#destinations" data-hover="DESTINATIONS">DESTINATIONS</a></li>
+                        <li class="list_item"><a href="#prices" data-hover="PRICES">PRICES</a></li>
+                        <li class="list_item"><a href="#testimonials" data-hover="TESTIMONALS">TESTIMONALS</a></li>
                     </ul>
                     <button class="btn schedule_btn">SCHEDULE NOW</button>
                 </div>
@@ -52,8 +53,49 @@
             </div>
         </section>
     </header>
-    <main></main>
-    <footer></footer>
+    <main>
+        <section class="section_wrapper">
+            <div class="flex_center section | welcome_section">
+                <h2 class="heading_semibold | section_title">WELCOME TO <span class="word_highlight">EXPLORIA</span>
+                </h2>
+                <div class="stacking_container">
+                    <!-- We have the content already filled, as a backup: -->
+                    <div class="flex_center | left_fixed | left_fixed_styling">Exciting tours for adventurers</div>
+                    <div class="right_scrolling_container">
+                        <div class="welcome_card welcome_card-1" data-title="Exciting tours for adventurers"
+                            data-bg="../img/welcome-image-1.jpg">Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. In, repudiandae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores,
+                            dignissimos. Nostrum neque tempore aspernatur ratione quae et tempora, nulla asperiores
+                            impedit a quo corrupti iure iste totam, ad repellat, ex laborum voluptatibus quas delectus.
+                            Est natus iure, aut minima optio dolorem voluptates eaque ducimus distinctio iste eius animi
+                            quidem similique? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur eos
+                            cumque minus cum eaque omnis odio provident modi sequi blanditiis.
+                        </div>
+                        <div class="welcome_card welcome_card-2" data-title="Safety first approach"
+                            data-bg="../img/numbers-image.jpg">Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. In, repudiandae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores,
+                            dignissimos. Nostrum neque tempore aspernatur ratione quae et tempora, nulla asperiores
+                            impedit a quo corrupti iure iste totam, ad repellat, ex laborum voluptatibus quas delectus.
+                            Est natus iure, aut minima optio dolorem voluptates eaque ducimus distinctio iste eius animi
+                            quidem similique? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur eos
+                            cumque minus cum eaque omnis odio provident modi sequi blanditiis.
+                        </div>
+                        <div class="welcome_card welcome_card-3" data-title="Kuch sochkar likho ache se"
+                            data-bg="../img/destinations-peru-small.jpg">Lorem ipsum dolor sit amet consectetur
+                            adipisicing
+                            elit. In, repudiandae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores,
+                            dignissimos. Nostrum neque tempore aspernatur ratione quae et tempora, nulla asperiores
+                            impedit a quo corrupti iure iste totam, ad repellat, ex laborum voluptatibus quas delectus.
+                            Est natus iure, aut minima optio dolorem voluptates eaque ducimus distinctio iste eius animi
+                            quidem similique? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur eos
+                            cumque minus cum eaque omnis odio provident modi sequi blanditiis.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer"></footer>
 </body>
 
 </html>
