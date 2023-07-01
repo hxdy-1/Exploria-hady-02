@@ -1,101 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
+        <link rel="stylesheet" href="./stylesheets/util.css" />
+        <link rel="stylesheet" href="./stylesheets/style.css" />
+        <link rel="stylesheet" href="./stylesheets/media-query.css" />
+        <script src="./js/script.js" defer></script>
+        <script src="./js/welcomeSection.js" defer></script>
+        <title>Exploria |</title>
+    </head>
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
-    <link rel="stylesheet" href="./stylesheets/util.css" />
-    <link rel="stylesheet" href="./stylesheets/style.css" />
-    <link rel="stylesheet" href="./stylesheets/media-query.css" />
-    <script src="./js/script.js" defer></script>
-    <script src="./js/welcomeSection.js" defer></script>
-    <title>Exploria |</title>
-</head>
-
-<body>
-    <header class="header">
-        <nav class="navbar">
-            <div class="logo_container">
-                <img src="./img/navbar_log.svg" alt="logo" />
-            </div>
-            <div class="hack_navbar">
-                <div class=" nav_items_container">
-                    <ul class="flex_center | nav_list">
-                        <li class="list_item"><a href="#home" data-hover="HOME">HOME</a></li>
-                        <li class="list_item"><a href="#destinations" data-hover="DESTINATIONS">DESTINATIONS</a></li>
-                        <li class="list_item"><a href="#prices" data-hover="PRICES">PRICES</a></li>
-                        <li class="list_item"><a href="#testimonials" data-hover="TESTIMONALS">TESTIMONALS</a></li>
-                    </ul>
-                    <button class="btn schedule_btn">SCHEDULE NOW</button>
+    <body>
+        <header class="header">
+            <nav class="navbar">
+                <div class="logo_container">
+                    <img src="./img/navbar_log.svg" alt="logo" />
                 </div>
-            </div>
-            <div class="hamburger_container">
-                <div class="bar top_bar"></div>
-                <div class="bar middle_bar"></div>
-                <div class="bar bottom_bar"></div>
-            </div>
-        </nav>
-        <section class="hero_section">
-            <img src="./img/hero_image.jpeg" alt="hero section image" class="hero_image" />
-            <div class="hero_content_container | text_invisibility">
-                <div class="hero_first_content">
-                    <h1 class="hero_title | hero_title_styling">
-                        <p class="heading_extrabold">UNLEASH <span class="small_title">the explorer in </span></p>
-                        <p class="heading_extrabold">YOURSELF</p>
-                    </h1>
-                    <button class="btn flex_center | explore_btn">EXPLORE <img src="./img/right-lg.svg"
-                            alt="right arrow" class="right_arrow"></button>
+                <div class="hack_navbar">
+                    <div class="nav_items_container">
+                        <ul class="flex_center | nav_list">
+                            <li class="list_item"
+                                ><a href="#home" data-hover="HOME">HOME</a></li
+                            >
+                            <li class="list_item"
+                                ><a
+                                    href="#destinations"
+                                    data-hover="DESTINATIONS"
+                                    >DESTINATIONS</a
+                                ></li
+                            >
+                            <li class="list_item"
+                                ><a href="#prices" data-hover="PRICES"
+                                    >PRICES</a
+                                ></li
+                            >
+                            <li class="list_item"
+                                ><a
+                                    href="#testimonials"
+                                    data-hover="TESTIMONALS"
+                                    >TESTIMONALS</a
+                                ></li
+                            >
+                        </ul>
+                        <button class="btn schedule_btn">SCHEDULE NOW</button>
+                    </div>
                 </div>
-                <p class="hero_text">
-                    Immerse yourself with different cultures and learn about world and its people...
-                </p>
-            </div>
-        </section>
-    </header>
-    <main>
-        <section class="section_wrapper">
-            <div class="flex_center section | welcome_section">
-                <h2 class="heading_semibold | section_title">WELCOME TO <span class="word_highlight">EXPLORIA</span>
-                </h2>
-                <div class="stacking_container">
-                    <!-- We have the content already filled, as a backup: -->
-                    <div class="flex_center | left_fixed | left_fixed_styling">Exciting tours for adventurers</div>
-                    <div class="right_scrolling_container">
-                        <div class="welcome_card welcome_card-1" data-title="Exciting tours for adventurers"
-                            data-bg="../img/welcome-image-1.jpg">Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. In, repudiandae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores,
-                            dignissimos. Nostrum neque tempore aspernatur ratione quae et tempora, nulla asperiores
-                            impedit a quo corrupti iure iste totam, ad repellat, ex laborum voluptatibus quas delectus.
-                            Est natus iure, aut minima optio dolorem voluptates eaque ducimus distinctio iste eius animi
-                            quidem similique? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur eos
-                            cumque minus cum eaque omnis odio provident modi sequi blanditiis.
+                <div class="hamburger_container">
+                    <div class="bar top_bar"></div>
+                    <div class="bar middle_bar"></div>
+                    <div class="bar bottom_bar"></div>
+                </div>
+            </nav>
+            <section class="hero_section">
+                <img
+                    src="./img/hero_image.jpeg"
+                    alt="hero section image"
+                    class="hero_image"
+                />
+                <div class="hero_content_container | text_invisibility">
+                    <div class="hero_first_content">
+                        <h1 class="hero_title | hero_title_styling">
+                            <p class="heading_extrabold"
+                                >UNLEASH
+                                <span class="small_title"
+                                    >the explorer in
+                                </span></p
+                            >
+                            <p class="heading_extrabold">YOURSELF</p>
+                        </h1>
+                        <button class="btn flex_center | explore_btn"
+                            >EXPLORE
+                            <img
+                                src="./img/right-lg.svg"
+                                alt="right arrow"
+                                class="right_arrow"
+                        /></button>
+                    </div>
+                    <p class="hero_text">
+                        Immerse yourself with different cultures and learn about
+                        world and its people...
+                    </p>
+                </div>
+            </section>
+        </header>
+        <main>
+            <section class="section_wrapper">
+                <div class="flex_center section | welcome_section">
+                    <h2 class="heading_semibold | section_title"
+                        >WELCOME TO <span class="word_highlight"><p>EXPLORIA</p></span>
+                    </h2>
+                    <div class="stacking_container">
+                        <!-- We have the content already filled, as a backup: -->
+                        <div
+                            class="flex_center | left_fixed | left_fixed_styling"
+                            >Exciting tours for adventurers</div
+                        >
+                        <div class="right_scrolling_container">
+                            <div
+                                class="welcome_card welcome_card-1"
+                                data-title="Exciting tours for adventurers"
+                                data-bg="../img/welcome-image-1.jpg"
+                            >
+                                <div class="icon">
+                                    <img
+                                        src="./img/globe.svg"
+                                        alt="globe img"
+                                    />
+                                </div>
+                                <div class="welcome_content">
+                                    <p
+                                        >Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur libero quo optio illo odio dolore voluptas officia vero repellat perspiciatis!</p
+                                    >
+                                    <p
+                                        >Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, ex atque quia ratione tempore</p
+                                    >
+                                    <p
+                                        >Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p
+                                    >
+                                </div>
+                            </div>
+                            <div
+                                class="welcome_card welcome_card-2"
+                                data-title="Safety first approach"
+                                data-bg="../img/numbers-image.jpg"
+                                >
+                                <div class="icon">
+                                    <img
+                                        src="./img/doctor-bag.svg"
+                                        alt="globe img"
+                                    />
+                                </div>
+                                <div class="welcome_content">
+                                <p
+                                    >Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p
+                                >
+                                <p
+                                    >Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur libero quo optio illo odio dolore voluptas officia vero repellat perspiciatis!</p
+                                >
+                                <p
+                                    >Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, ex atque quia ratione tempore</p
+                                >
+                            </div>
                         </div>
-                        <div class="welcome_card welcome_card-2" data-title="Safety first approach"
-                            data-bg="../img/numbers-image.jpg">Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. In, repudiandae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores,
-                            dignissimos. Nostrum neque tempore aspernatur ratione quae et tempora, nulla asperiores
-                            impedit a quo corrupti iure iste totam, ad repellat, ex laborum voluptatibus quas delectus.
-                            Est natus iure, aut minima optio dolorem voluptates eaque ducimus distinctio iste eius animi
-                            quidem similique? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur eos
-                            cumque minus cum eaque omnis odio provident modi sequi blanditiis.
-                        </div>
-                        <div class="welcome_card welcome_card-3" data-title="Kuch sochkar likho ache se"
-                            data-bg="../img/destinations-peru-small.jpg">Lorem ipsum dolor sit amet consectetur
-                            adipisicing
-                            elit. In, repudiandae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores,
-                            dignissimos. Nostrum neque tempore aspernatur ratione quae et tempora, nulla asperiores
-                            impedit a quo corrupti iure iste totam, ad repellat, ex laborum voluptatibus quas delectus.
-                            Est natus iure, aut minima optio dolorem voluptates eaque ducimus distinctio iste eius animi
-                            quidem similique? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur eos
-                            cumque minus cum eaque omnis odio provident modi sequi blanditiis.
+                        <div
+                            class="welcome_card welcome_card-3"
+                            data-title="Kuch sochkar likho ache se"
+                            data-bg="../img/destinations-peru-small.jpg"
+                            ><div class="icon">
+                                <img
+                                    src="./img/medal.png"
+                                    alt="globe img"
+                                />
+                            </div>
+                            <div class="welcome_content">
+                                <p
+                                    >Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, ex atque quia ratione tempore</p
+                                >
+                                <p
+                                >Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur libero quo optio illo odio dolore voluptas officia vero repellat perspiciatis!</p
+                            >
+                            <p
+                                >Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p
+                            >
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-    </main>
-    <footer class="footer"></footer>
-</body>
-
+            </section>
+        </main>
+        <footer class="footer"></footer>
+    </body>
 </html>

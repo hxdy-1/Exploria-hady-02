@@ -16,7 +16,8 @@
 
     const options = {
         root: null,
-        threshold: 0.8,
+        // threshold: 0.95,
+        threshold: 1,
         rootMargin: '',
     };
 
