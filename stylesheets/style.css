@@ -344,6 +344,7 @@
 
 .welcome_card-3 {
     background-color: lightblue;
+    margin-bottom: 0;
     /* transform: translateY(3em); */
 }
 
