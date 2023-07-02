@@ -41,7 +41,7 @@
 
 /* NAVLINK HOVER EFFECT */
 
-/* .list_item a {
+.list_item a {
     color: var(--primary-400);
     padding: 7px 0;
 
@@ -88,9 +88,9 @@
 	-webkit-transform: translateY(0px);
 	-moz-transform: translateY(0px);
 	transform: translateY(0px);
-} */
+}
 
-.list_item a {
+/* .list_item a {
     padding-bottom: 3px;
     display: inline-block;
     vertical-align: middle;
@@ -130,7 +130,7 @@
     transform: scaleX(1);
     -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
     transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
-}
+} */
 
 /* NAVLINK HOVER EFFECT END */
 
@@ -213,9 +213,10 @@
 
 .hero_text {
     color: white;
-    opacity: .8;
+    opacity: .6;
     width: 30rem;
-    font-weight: bolder;
+    text-shadow: 2px 1px 2px black;
+    /* font-weight: bolder; */
 }
 
 .text_invisibility .heading_extrabold:nth-of-type(1) {
@@ -320,13 +321,14 @@
 
     width: 100%;
 
-    padding: 5em;
+    /* padding: 5em; */
+    padding: 1.5em 3em 3em;
 
     background-color: var(--neutral-700);
     background-image: var(--dark-linear-gradient);
 
-    border: 2px solid gray;
-    border-radius: 6px;
+    /* border: 2px solid gray; */
+    border-radius: 10px;
 
     margin-bottom: 1rem;
 }
@@ -341,7 +343,33 @@
 }
 
 .welcome_card-3 {
+    background-color: lightblue;
+    margin-bottom: 0;
     /* transform: translateY(3em); */
+}
+
+.icon {
+    width: 5rem;
+    height: 5rem;
+
+    margin: 0 auto 1rem;
+    
+    border: 5px solid var(--primary-400);
+    border-radius: 50%;
+
+    padding: .5em;
+}
+
+.welcome_content {
+    display: flex;
+    flex-direction: column;
+    
+    font-weight: var(--fw-light);
+
+    gap: 2rem;
+    text-align: center;
+
+    padding: 3em;
 }
 
 .footer {
