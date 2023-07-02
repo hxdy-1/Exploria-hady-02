@@ -1,8 +1,8 @@
-'use strict';
+"use strict";
 
 (function () {
-    const welcomeLeftFixedEl = document.querySelector('.left_fixed');
-    const welcomeRightCards = document.querySelectorAll('.welcome_card');
+    const welcomeLeftFixedEl = document.querySelector(".left_fixed");
+    const welcomeRightCards = document.querySelectorAll(".welcome_card");
 
     const callback = function (entries) {
         const [entry] = entries;
@@ -18,11 +18,11 @@
         root: null,
         // threshold: 0.95,
         threshold: 0.9,
-        rootMargin: '',
+        rootMargin: "",
     };
 
     const observer = new IntersectionObserver(callback, options);
-    welcomeRightCards.forEach(card => {
+    welcomeRightCards.forEach((card) => {
         observer.observe(card);
     });
 })();
