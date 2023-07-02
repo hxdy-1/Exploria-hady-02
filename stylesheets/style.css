@@ -289,6 +289,8 @@
     width: 50%;
 
     padding: 2em;
+
+    z-index: 3;
 }
 
 .left_fixed_styling {
@@ -369,7 +371,12 @@
     gap: 2rem;
     text-align: center;
 
-    padding: 3em;
+    padding: 2em;
+}
+
+.welcome_content p {
+    line-height: 1.4;
+    letter-spacing: 1px;
 }
 
 .footer {
