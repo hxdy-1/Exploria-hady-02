@@ -2,15 +2,20 @@ https://www.figma.com/file/3aOgABH0i6k6WY75re4hMa/Exploria-collaborate?type=desi
 
 TODO:
 
-Real content for welcom section.
+The hero text should be clamped according to the viewport, such that it appears in the blue-water-part in each device.
+
+Change the dimensions of the "Safety first approach" so that the resize-animation is better than the current one.
+
+Real content for welcome section.
 
 Box-shadow and linear gradient of destination section.
 
 Button hover effects.
 
-Box shadow, linear gradient to the parent container, mobile responsiveness, better image hover.
-
+Destination section: 
+    => Box shadow, linear gradient to the parent container
+    => Text appears way too large. Fix using clamp.
 
 COMPLETED: 
 
-mobile responsiveness, better image hover.
+Destination section: mobile responsiveness, better image hover.

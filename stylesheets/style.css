@@ -157,7 +157,7 @@
     gap: 4rem;
 
     position: absolute;
-    top: 35%;
+    top: 30%;
     left: 5%;
     /* Another way to achieve the same: Giving a left-top-bottom padding to the hero-section-container. So that the hero-text gets properly aligned. */
 
