@@ -16,6 +16,10 @@ Destination section:
     => Box shadow, linear gradient to the parent container
     => Text appears way too large. Fix using clamp.
 
+In the price section the image is overflowing towards the border. 
+
+In the price section: while flipping the card a black circle shaped structure appears at the bottom left. 
+
 COMPLETED: 
 
 Destination section: mobile responsiveness, better image hover.
