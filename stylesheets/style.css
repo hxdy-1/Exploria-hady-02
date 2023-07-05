@@ -1,6 +1,6 @@
 .header {
   position: relative;
-  height: 105vh;
+  height: 100vh;
 
   /* Not willing to change the height as well as width of the image. Just width: 100%. But the image was overflowing in terms of height (out of the header). So: */
   overflow: hidden;

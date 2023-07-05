@@ -4,6 +4,8 @@ TODO:
 
 The hero text should be clamped according to the viewport, such that it appears in the blue-water-part in each device.
 
+The hero image doesn't occupy the complete screen and leaves a black patch towards the end of the screen.
+
 Change the dimensions of the "Safety first approach" so that the resize-animation is better than the current one.
 
 Real content for welcome section.
@@ -17,6 +19,7 @@ Destination section:
     => Text appears way too large. Fix using clamp.
 
 In the price section the image is overflowing towards the border. 
+The price title looks congested. Improve the surrounding spacing.
 
 In the price section: while flipping the card a black circle shaped structure appears at the bottom left. 
 
