@@ -821,6 +821,17 @@
     background-color: var(--primary-400);
 }
 
+/* FOOTER: */
+
+.footer {
+  /* background-color: green; */
+  /* height: 100vh; */
+
+  position: sticky;
+  bottom: -100%;
+  z-index: -1;
+}
+
 .dummy-1,
 .dummy-2 {
   /* Looks best, when both the elements occupy half the screen. But this isn't practical: */
@@ -846,11 +857,12 @@
   z-index: -2;
 }
 
-.footer {
-  /* background-color: green; */
-  /* height: 100vh; */
-
+.copyright_container {
+  padding: 1em;
+  font-size: 1.2rem;
+  
+  /* The chain of stickiness: */
   position: sticky;
-  bottom: -100%;
-  z-index: -1;
+  bottom: 0;
+  z-index: -3;
 }
