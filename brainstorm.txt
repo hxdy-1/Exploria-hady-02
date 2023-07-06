@@ -2,7 +2,9 @@ https://www.figma.com/file/3aOgABH0i6k6WY75re4hMa/Exploria-collaborate?type=desi
 
 TODO:
 
-I (pravin) changed the order of pricing section's selectors. Check if anything broke.
+I changed the order of pricing section's selectors. Check if anything broke.
+
+Sticky navbar.
 
 The hero text should be clamped according to the viewport, such that it appears in the blue-water-part in each device.
 
