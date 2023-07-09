@@ -5,7 +5,7 @@
     /* Not willing to change the height as well as width of the image. Just width: 100%. But the image was overflowing in terms of height (out of the header). So: */
     overflow: hidden;
 
-    z-index: 1;
+    z-index: 70;
     background-color: var(--neutral-900);
 }
 
@@ -44,7 +44,7 @@
 
 /* NAVLINK HOVER EFFECT */
 
-.list_item a {
+/* .list_item a {
     color: var(--primary-400);
     padding: 7px 0;
 
@@ -93,7 +93,7 @@
     -webkit-transform: translateY(0px);
     -moz-transform: translateY(0px);
     transform: translateY(0px);
-}
+} */
 
 /* .list_item a {
     padding-bottom: 3px;
@@ -257,6 +257,11 @@
     transition-delay: 700ms;
 }
 
+.main{
+  position: relative;
+  z-index: 50;
+}
+
 /* WELCOME SECTIONS: */
 
 .welcome_section {
@@ -340,7 +345,7 @@
     margin-bottom: 0;
 }
 
-.icon {
+.welcome_icon {
     width: 5rem;
     height: 5rem;
 
@@ -819,7 +824,10 @@
 
     position: sticky;
     bottom: -125%;
-    z-index: -1;
+    /* z-index: -1; */
+    z-index: 5;
+
+    /* overflow: hidden; */
 }
 
 /* Looks best, when both the elements occupy half the screen. But this isn't practical: */
@@ -827,14 +835,14 @@
 
 /* ACHIEVEMENTS SECTIONS: */
 
-.achievements_section_container {
+/* .achievements_section_container {
     background-color: var(--neutral-900);
 }
 
 .achievements_section {
     background-color: var(--neutral-900);
     margin-top: 0;
-}
+} */
 
 .achievements_container {
     background-color: rgb(255, 255, 255);
@@ -884,8 +892,8 @@
     letter-spacing: 1.28px;
 }
 
-.dummy-2 {
-    height: 70vh;
+.footer_connect_wrapper {
+    /* height: 70vh; */
     background-color: green;
     background-color: var(--neutral-900);
 
@@ -893,6 +901,71 @@
     position: sticky;
     bottom: 0;
     z-index: -2;
+  }
+
+  .footer_connect_section{
+    flex-direction: row;
+
+    gap: 10rem;
+
+    padding-bottom: 4em;
+  }
+
+  .sitemap_cont{
+    align-items: flex-start;
+    gap: 2rem;
+  }
+
+  .sitemap_explore_cont,
+  .sitemap_connect_cont,
+  .sitemap_help_cont{
+    flex-direction: column;
+    gap: 2rem;
+
+    align-items: flex-start;
+
+    font-weight: var(--fw-light);
+  }
+
+  .sitemap_conts_headings{
+    letter-spacing: 1px;
+  }
+
+  .subscribe_cont{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .subscribe_cont > p {
+    max-width: 25rem;
+
+    font-weight: var(--fw-light);
+    line-height: 1.5rem;
+
+  }
+
+  .email_input_cont{
+    gap: 1rem;
+    justify-content: flex-start;
+  }
+
+  .email_input{
+    padding: .7em .8em;
+    font-weight: var(--fw-light);
+
+    font-size: .95rem;
+
+    width: 14rem;
+
+    color: black;
+  }
+
+.email_submit_btn{
+  background-color: var(--primary-400);
+  font-weight: var(--fw-light);
+
+  padding: 1em 1.5em;
 }
 
 .copyright_container {
@@ -903,4 +976,157 @@
     position: sticky;
     bottom: 0;
     z-index: -3;
+
+    margin: 0 auto;
+
+    gap: 0;
+}
+
+.socials_cont{
+  align-items: flex-end;
+  gap: 2rem;
+
+  border-top: 2px solid white;
+  width: 80%;
+
+  padding: 2em;
+}
+
+.footer_logo_container{
+  width: 8rem;
+
+}
+
+.social_links li a{
+  width: 3rem;
+  height: 3rem;
+  background-color: #94fec9;
+  text-align: center;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  margin: 0 10px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.social_links li a .icon {
+  position: relative;
+  color: #262626;
+  transition: .5s;
+  z-index: 3;
+}
+
+.social_links li a:hover .icon {
+  color: #fff;
+  transform: rotateY(360deg);
+}
+
+.social_links li a:before {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  height: 100%;
+  width:100%;
+  background: #f00;
+  transition: .5s;
+  z-index: 2
+ }
+
+.social_links li a:hover:before{
+  top: 0;
+}
+
+.social_links li:nth-child(1) a:before {
+background: #3b5999;
+}
+
+.social_links li:nth-child(2) a:before {
+background-image : linear-gradient(rgb(79,91,213),rgb(150,47,191),rgb(214,41,118),rgb(250,126,30), rgb(254,218,117))
+}
+
+.social_links li:nth-child(3) a:before {
+background: #55acee;
+}
+
+.social_links li:nth-child(4) a:before {
+background: #0077b5;
+}
+
+
+.copyright{
+  width: 80%;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+
+  font-weight: var(--fw-light);
+
+  font-size: .9rem;
+
+  margin-bottom: 1rem;
+
+  position: relative;
+}
+
+.copyright p{
+  /* align-self: flex-start; */
+  flex: 1;
+}
+
+.copyright ul {
+  gap: 1rem;
+}
+
+/* .wave{ */
+  /* bottom: 0;
+  left: 0;
+
+  width: 100%;
+
+  z-index: -10;
+} */
+
+/* .custom-shape-divider-top-1688843155 {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1688843155 svg {
+  position: relative;
+  display: block;
+  width: calc(143% + 1.3px);
+  height: 352px;
+}
+
+.custom-shape-divider-top-1688843155 .shape-fill {
+  fill: #FFFFFF;
+} */
+
+.custom-shape-divider-bottom-1688843615 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+
+  z-index: -10;
+}
+
+.custom-shape-divider-bottom-1688843615 svg {
+  position: relative;
+  display: block;
+  width: calc(150% + 1.3px);
+  height: 250px;
+
+}
+
+.custom-shape-divider-bottom-1688843615 .shape-fill {
+  fill: var(--primary-600);
 }

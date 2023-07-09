@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./stylesheets/util.css" />
     <link rel="stylesheet" href="./stylesheets/style.css" />
     <link rel="stylesheet" href="./stylesheets/media-query.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <script src="./js/script.js" defer></script>
     <script src="./js/welcomeSection.js" defer></script>
     <script src="./js/flipCardSection.js" defer></script>
@@ -24,10 +25,12 @@
             <div class="hack_navbar">
                 <div class="nav_items_container">
                     <ul class="flex_center | nav_list">
-                        <li class="list_item"><a href="#home" data-hover="HOME">HOME</a></li>
-                        <li class="list_item"><a href="#destinations" data-hover="DESTINATIONS">DESTINATIONS</a></li>
-                        <li class="list_item"><a href="#prices" data-hover="PRICES">PRICES</a></li>
-                        <li class="list_item"><a href="#testimonials" data-hover="TESTIMONALS">TESTIMONALS</a></li>
+                        <li class="util_link_hover list_item"><a href="#home" data-hover="HOME">HOME</a></li>
+
+                        <li class="util_link_hover list_item"><a href="#destinations" data-hover="DESTINATIONS">DESTINATIONS</a></li>
+
+                        <li class="util_link_hover list_item"><a href="#prices" data-hover="PRICES">PRICES</a></li>
+                        <li class="util_link_hover list_item"><a href="#testimonials" data-hover="TESTIMONALS">TESTIMONALS</a></li>
                     </ul>
                     <button class="btn schedule_btn">SCHEDULE NOW</button>
                 </div>
@@ -59,7 +62,7 @@
             </div>
         </section>
     </header>
-    <main>
+    <main class="main">
         <!-- WELCOME SECTION -->
         <section class="section_wrapper">
             <div class="flex_center section | welcome_section">
@@ -73,7 +76,7 @@
                     <div class="right_scrolling_container">
                         <div class="welcome_card welcome_card-1" data-title="Exciting tours for adventurers"
                             data-bg="../img/welcome-image-1.jpg">
-                            <div class="icon">
+                            <div class="welcome_icon">
                                 <img src="./img/globe.svg" alt="globe img" />
                             </div>
                             <div class="welcome_content">
@@ -86,7 +89,7 @@
                         </div>
                         <div class="welcome_card welcome_card-2" data-title="Safety first approach"
                             data-bg="../img/welcome-image-2.jpg">
-                            <div class="icon">
+                            <div class="welcome_icon">
                                 <img src="./img/doctor-bag.svg" alt="globe img" />
                             </div>
                             <div class="welcome_content">
@@ -99,7 +102,7 @@
                         </div>
                         <div class="welcome_card welcome_card-3" data-title="Exquisite Travel Experiences"
                             data-bg="../img/welcome-image-3.jpg">
-                            <div class="icon">
+                            <div class="welcome_icon">
                                 <img src="./img/medal.png" alt="globe img" />
                             </div>
                             <div class="welcome_content">
@@ -320,7 +323,8 @@
     </main>
     <footer class="footer">
         <!-- ACHIEVEMENTS SECTION -->
-        <section class="section_wrapper  | achievements_section_container">
+        <!-- <section class="section_wrapper  | achievements_section_container"> -->
+        <section class="section_wrapper">
 
             <div class="flex_center section | achievements_section">
                 
@@ -351,11 +355,90 @@
             </div>
 
         </section>
-        <div class="flex_center | dummy-2">
-            <h2>Here's where the actual footer section will be laid out</h2>
+        
+        <section class="section_wrapper | footer_connect_wrapper">
+
+            <div class="flex_center section | footer_connect_section">
+
+                <div class="flex_center | sitemap_cont">
+                    <ul class="flex_center sitemap_explore_cont">
+                        <li><h4 class="sitemap_conts_headings">EXPLORE</h4></li>
+                        <li class="util_link_hover"><a href="#" data-hover="Press">Press</a></li>
+                        <li class="util_link_hover"><a href="#" data-hover="Blogs">Blogs</a></li>
+                    </ul>
+
+                    <ul class="flex_center sitemap_connect_cont">
+                        <li><h4 class="sitemap_conts_headings">CONNECT</h4></li>
+                        <li class="util_link_hover"><a href="#" data-hover="Contact Us">Contact Us</a></li>
+                        <li class="util_link_hover"><a href="#" data-hover="Career">Career</a></li>
+                        <li class="util_link_hover"><a href="#" data-hover="Socials">Socials</a></li>
+                    </ul>
+
+                    <ul class="flex_center sitemap_help_cont">
+                        <li><h4 class="sitemap_conts_headings">HELP</h4></li>
+                        <li class="util_link_hover"><a href="#" data-hover="FAQ">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <div class="subscribe_cont">
+                    <h4 class="sitemap_conts_headings">GET YOUR INBOX IN SHAPE</h4>
+                    <p>Be the first to know about exclusive deals, merch drops, newletter and more!</p>
+                    <div class="flex_center email_input_cont">
+                        <label for="email">
+                            <input type="email" id="email" class="email_input" placeholder="example@domain.com">
+                        </label>    
+                        <button class="btn email_submit_btn">SUBMIT</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        <div class="flex_center section | copyright_container">
+            <div class="flex_center | socials_cont">
+                <div class="footer_logo_container">
+                    <img src="./img/navbar_log.svg" alt="logo" />
+                </div>
+                <ul class="flex_center social_links">
+                    <li>
+                        <a href='#' class="flex_center"><i class="fab fa-facebook icon"></i>    </a>  
+                      </li>
+                      <li>
+                        <a href='#' class="flex_center"><i class="fab fa-instagram icon"></i>    </a>  
+                      </li>
+                      <li>
+                        <a href='#' class="flex_center"><i class="fab fa-twitter icon"></i>    </a>  
+                      </li>
+                      <li>
+                        <a href='#' class="flex_center"><i class="fab fa-linkedin icon"></i>    </a>  
+                      </li>
+                </ul>
+                
+            </div>
+            <div class="copyright">
+                <p> &copy; 2023 Exploria. All rights reserved.</p>
+                <ul class="flex_center">
+                    <li class="util_link_hover">
+
+                        <a href="#" data-hover="Privacy policy">Privacy policy</a>
+                    </li>
+                    <li class="util_link_hover">
+
+                        <a href="#" data-hover="Terms & Services">Terms & Services</a>
+                    </li>
+                </ul>
+                <!-- <svg width="100%" height="100%" id="svg" viewBox="0 0 1440 590" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150 wave"><defs><linearGradient id="gradient" x1="5%" y1="28%" x2="95%" y2="72%"><stop offset="5%" stop-color="#34c97e"></stop><stop offset="95%" stop-color="#3c8e65"></stop></linearGradient></defs><path d="M 0,600 C 0,600 0,300 0,300 C 129.19999999999993,245.86666666666667 258.39999999999986,191.73333333333332 443,211 C 627.6000000000001,230.26666666666668 867.6000000000001,322.93333333333334 1043,350 C 1218.3999999999999,377.06666666666666 1329.1999999999998,338.5333333333333 1440,300 C 1440,300 1440,600 1440,600 Z" stroke="none" stroke-width="0" fill="url(#gradient)" fill-opacity="1" class="transition-all duration-300 ease-in-out delay-150 path-0"></path></svg> -->
+            </div>
         </div>
-        <div class="flex_center | copyright_container">
-            <h3>Copyright @ Exploria</h3>
+        <!-- <div class="custom-shape-divider-top-1688843155">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+            </svg>
+        </div> -->
+        <div class="custom-shape-divider-bottom-1688843615">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+            </svg>
         </div>
     </footer>
 </body>
