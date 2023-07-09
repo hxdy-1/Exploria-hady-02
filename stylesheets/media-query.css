@@ -273,6 +273,8 @@
     .overlay_left {
         clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
         width: 100%;
+
+        padding: 2em;
     }
 
     .achievements_content_container {
@@ -288,6 +290,8 @@
 
     .top {
         gap: 3rem;
+
+        margin-bottom: 4rem;
     }
 
     .numbers {
@@ -302,21 +306,63 @@
         display: inline;
     }
 
-    .footer_connect_section{
+    /* FOOTER CONNECT SECTION */
+
+    .footer_connect_section {
         flex-direction: column-reverse;
+        padding-bottom: 2em;
     }
 
+    .subscribe_cont > p {
+        font-weight: var(--fw-lighter);
+    }
 
-    .email_input_cont{
+    .email_input_cont {
         flex-direction: column;
     }
 
-    .email_input_cont > *{
+    .email_input_cont > * {
         width: 100%;
     }
-    .email_input{
+    .email_input {
         width: 100%;
     }
 
-    
+    .sitemap_cont {
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 1rem 4rem;
+    }
+
+    .util_link_hover {
+        font-weight: var(--fw-lighter);
+    }
+
+    .socials_cont {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 0.5em;
+    }
+
+    .social_links li a {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    .copyright {
+        flex-direction: column;
+    }
+
+    .copyright p {
+        text-align: center;
+    }
+
+    .footer {
+        /* bottom: -173%; */
+        bottom: -200%;
+    }
+
+    .custom-shape-divider-bottom-1688843615 svg {
+        width: calc(200% + 1.3px);
+    }
 }
