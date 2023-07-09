@@ -301,4 +301,22 @@
     .caption .line_break {
         display: inline;
     }
+
+    .footer_connect_section{
+        flex-direction: column-reverse;
+    }
+
+
+    .email_input_cont{
+        flex-direction: column;
+    }
+
+    .email_input_cont > *{
+        width: 100%;
+    }
+    .email_input{
+        width: 100%;
+    }
+
+    
 }
