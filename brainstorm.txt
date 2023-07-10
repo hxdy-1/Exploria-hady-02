@@ -2,39 +2,41 @@ https://www.figma.com/file/3aOgABH0i6k6WY75re4hMa/Exploria-collaborate?type=desi
 
 TODO:
 
-I changed the order of pricing section's selectors. Check if anything broke.
+1. I changed the order of pricing section's selectors. Check if anything broke.(completed)
 
-Sticky navbar.
+2. Sticky navbar.
 
-The hero text should be clamped according to the viewport, such that it appears in the blue-water-part in each device.
+3. The hero text should be clamped according to the viewport, such that it appears in the blue-water-part in each device.
 
-The hero image doesn't occupy the complete screen and leaves a black patch towards the end of the screen.
+4. The hero image doesn't occupy the complete screen and leaves a black patch towards the end of the screen.(completed using height)
 
-Change the dimensions of the "Safety first approach" so that the resize-animation is better than the current one.
+5. Change the dimensions of the "Safety first approach" so that the resize-animation is better than the current one.
 
-Real content for welcome section.
+6. Real content for welcome section.
 
-Box-shadow and linear gradient of destination section.
+7. Button hover effects.
 
-Button hover effects.
-
-Destination section: 
+8. Destination section: 
     => Box shadow, linear gradient to the parent container
     => Text appears way too large. Fix using clamp.
 
-Adding a linear gradient to destination and testimonial sections.
+9. Adding a linear gradient to destination and testimonial sections.
 
-In the price section the image is overflowing towards the border. 
+10. In the price section the image is overflowing towards the border. 
 The price title looks congested. Improve the surrounding spacing.
 
-In the price section: while flipping the card a black circle shaped structure appears at the bottom left. 
+11. In the price section: while flipping the card a black circle shaped structure appears at the bottom left. 
 
-Linear gradient for the testimonials section.
+12. Linear gradient for the testimonials section.
 
-Analyse and configure the margin top for each section
+13. Analyse and configure the margin top for each section
 
-Opening a modal (with the effects similar to Slicicious) on clicking the "Schedule now" nav button.
+14. Opening a modal (with the effects similar to Slicicious) on clicking the "Schedule now" nav button.
 
 COMPLETED: 
 
 Destination section: mobile responsiveness, better image hover.
+
+1. I changed the order of pricing section's selectors. Check if anything broke.
+
+4. The hero image doesn't occupy the complete screen and leaves a black patch towards the end of the screen.
