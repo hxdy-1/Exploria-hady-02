@@ -4,6 +4,13 @@ const target = document.querySelector(".achievements_container");
 const counters = document.querySelectorAll(".numbers");
 const speed = 400;
 
+// window.addEventListener("resize", function () {
+//     document.documentElement.style.setProperty(
+//         "--window-height",
+//         window.innerHeight + "vh"
+//     );
+// });
+
 const callback = (entries, observer) => {
     const [entry] = entries;
 

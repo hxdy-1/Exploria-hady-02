@@ -9,6 +9,8 @@
 }
 
 :root {
+    /* --window-height: 100vh; */
+
     /* section */
     --section-max-width: 1200px;
     --section-padding: 1rem;
@@ -133,7 +135,7 @@ a {
     /* padding: 3rem; */
     display: flex;
     justify-content: center;
-  }
+}
 
 .section {
     flex-direction: column;
@@ -159,7 +161,7 @@ a {
     );
 } */
 
-.util_link_hover a{
+.util_link_hover a {
     color: var(--primary-400);
     padding: 7px 0;
 

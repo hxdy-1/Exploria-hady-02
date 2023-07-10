@@ -151,6 +151,9 @@
     position: absolute;
     top: 0;
     z-index: -1;
+
+    height: 100vh;
+    /* height: var(--window-height); */
     /* filter: brightness(70%); */
 }
 
@@ -823,8 +826,11 @@
     /* height: 100vh; */
 
     position: sticky;
-    bottom: -125%;
-    /* z-index: -1; */
+    bottom: -125vh;
+    /* bottom: -135vh; */
+    /* bottom: -125%; */
+    /* bottom: calc((-1 * var(--window-height))); */
+    /* bottom: calc((-1 * var(--window-height)) - 25vh); */
     z-index: 5;
 
     /* overflow: hidden; */
