@@ -44,6 +44,8 @@
 
     .hero_content_container {
         top: 25%;
+        left: 0;
+        
         gap: 5rem;
 
         text-align: center;

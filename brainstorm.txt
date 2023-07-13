@@ -1,28 +1,10 @@
-// Dummy commit from Asus
-
-// Dummy commit from Hadi for fixing PR issue
-
-
-// Dummy commit from Yunus for fixing PR issue
-
-
 https://www.figma.com/file/3aOgABH0i6k6WY75re4hMa/Exploria-collaborate?type=design&node-id=1%3A2&mode=design&t=UyJhOc9VnbfCfRoY-1
 
 TODO:
 
-1. I changed the order of pricing section's selectors. Check if anything broke.(completed)
-
 2. Sticky navbar.
 
 3. The hero text should be clamped according to the viewport, such that it appears in the blue-water-part in each device.
-
-4. The hero image doesn't occupy the complete screen and leaves a black patch towards the end of the screen.(completed using height)
-
-5. Change the dimensions of the "Safety first approach" so that the resize-animation is better than the current one.
-
-6. Real content for welcome section.
-
-7. Button hover effects.
 
 8. Destination section: 
     => Box shadow, linear gradient to the parent container
@@ -30,16 +12,14 @@ TODO:
 
 9. Adding a linear gradient to destination and testimonial sections.
 
-10. In the price section the image is overflowing towards the border. 
-The price title looks congested. Improve the surrounding spacing.
-
-11. In the price section: while flipping the card a black circle shaped structure appears at the bottom left. 
-
 12. Linear gradient for the testimonials section.
 
 13. Analyse and configure the margin top for each section
 
 14. Opening a modal (with the effects similar to Slicicious) on clicking the "Schedule now" nav button.
+
+
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 
 COMPLETED: 
 
@@ -48,3 +28,14 @@ Destination section: mobile responsiveness, better image hover.
 1. I changed the order of pricing section's selectors. Check if anything broke.
 
 4. The hero image doesn't occupy the complete screen and leaves a black patch towards the end of the screen.
+
+5. Change the dimensions of the "Safety first approach" so that the resize-animation is better than the current one.
+
+6. Real content for welcome section.
+
+7. Button hover effects.
+
+10. In the price section the image is overflowing towards the border. 
+The price title looks congested. Improve the surrounding spacing.
+
+11. In the price section: while flipping the card a black circle shaped structure appears at the bottom left. 
