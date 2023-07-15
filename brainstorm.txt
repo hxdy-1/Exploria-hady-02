@@ -16,8 +16,6 @@ TODO:
 
 15. Favicon
 
-16. Hamburger navbar for mobile
-
 17. Replicate the shadow effets of section title from linear.app
 
 
@@ -35,12 +33,16 @@ Destination section: mobile responsiveness, better image hover.
 
 4. The hero image doesn't occupy the complete screen and leaves a black patch towards the end of the screen.
 
-
 6. Real content for welcome section.
 
 7. Button hover effects.
+
+8. Destination section:
+    => Text appears way too large. Fix using clamp.
 
 10. In the price section the image is overflowing towards the border. 
 The price title looks congested. Improve the surrounding spacing.
 
 11. In the price section: while flipping the card a black circle shaped structure appears at the bottom left. 
+
+16. Hamburger navbar for mobile
