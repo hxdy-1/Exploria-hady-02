@@ -9,16 +9,19 @@
     <link rel="stylesheet" href="./stylesheets/style.css" />
     <link rel="stylesheet" href="./stylesheets/media-query.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-    <script src="./js/navbar.js" defer></script>
-    <script src="./js/numSection.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" >
     <script src="./js/script.js" defer></script>
+    <script src="./js/navbar.js" defer></script>
+    <script src="./js/modal.js" defer></script>
     <script src="./js/welcomeSection.js" defer></script>
+    <script src="./js/numSection.js" defer></script>
+    <script src="./js/hamburgerMenu.js" defer></script>
     <!-- <script src="./js/flipCardSection.js" defer></script> -->
     <title>Exploria |</title>
 </head>
 
-<body>
-    <header class="header">
+<body class="body">
+    <header class="header" id="home">
         <nav class="navbar">
             <div class="logo_container">
                 <img src="./img/navbar_log.svg" alt="logo" />
@@ -42,7 +45,7 @@
                 <div class="bar bottom_bar"></div>
             </div>
         </nav>
-        <section class="hero_section" id="home">
+        <section class="hero_section">
             <img src="./img/hero_image.jpeg" alt="hero section image" class="hero_image" />
             <div class="hero_content_container | text_invisibility">
                 <div class="hero_first_content">
@@ -316,6 +319,30 @@
             </div>
         </section>
     </main>
+    <!-- MODAL ASIDE -->
+    <aside class="modal_container hidden">
+        <h2 class="modal_title">SCHEDULE YOUR TRIP WITH EXPLORIA RIGHT AWAY</h2>
+        <div class="modal_form_container">
+
+        </div>
+    </aside>
+    <aside class="modal_drop_shadow hidden">
+        <button><i class="fa-solid fa-xmark cross | modal_cross"></i></button>
+    </aside>
+    <aside class="hamburger hidden">
+        <ul class="flex_center | hamburger_nav_list">
+            <li class="util_link_hover list_item"><a href="#home" data-hover="HOME">HOME</a></li>
+            
+            <li class="util_link_hover list_item"><a href="#destinations" data-hover="DESTINATIONS">DESTINATIONS</a></li>
+            
+            <li class="util_link_hover list_item"><a href="#prices" data-hover="PRICES">PRICES</a></li>
+            <li class="util_link_hover list_item"><a href="#testimonials" data-hover="TESTIMONALS">TESTIMONALS</a></li>
+        </ul>
+        <button><i class="fa-solid fa-xmark | hamburger_cross"></i></button>
+    </aside>
+    <aside class="hamburger_drop_shadow hidden">
+        <!-- <button><i class="fa-solid fa-xmark cross"></i></button> -->
+    </aside>
     <footer class="footer">
         <!-- ACHIEVEMENTS SECTION -->
         <section class="section_wrapper">

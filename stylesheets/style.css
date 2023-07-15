@@ -48,9 +48,132 @@
     font-weight: var(--fw-light);
 }
 
+/* MODAL STARTS */
+
+.modal_container {
+    position: fixed;
+    z-index: 100;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    height: 70vh;
+    width: 65vw;
+    background-color: white;
+    border-radius: 10px;
+
+    /* background-color: var(--neutral-900); */
+    background-color: var(--neutral-700);
+    background-blend-mode: hard-light;
+    background-image: url("../img/flip-card1.jpeg");
+    /* background-position: cover; */
+    background-size: cover;
+}
+
+.modal_drop_shadow {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    top: 0;
+    left: 0;
+    text-align: end;
+    backdrop-filter: blur(3px);
+    z-index: 90;
+}
+
+.modal_drop_shadow button {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    height: fit-content;
+    width: fit-content;
+    margin: 1rem 2rem;
+}
+
+.fa-xmark {
+    cursor: pointer;
+    font-size: 1.8rem;
+    padding: 0.4em;
+
+    color: white;
+    font-size: 4vw;
+    padding: 0;
+}
+
+/* MODAL ENDS */
+
+/* HAMBURGER MENU STARTS */
+
 .hamburger_container {
     display: none;
 }
+
+.hamburger {
+    /* position: absolute; */
+    /* position: sticky; */
+    position: fixed;
+    z-index: 110;
+
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 85vw;
+    /* background-color: var(--neutral-900); */
+    background-color: var(--neutral-700);
+
+    box-shadow: -4px 0px 10px var(--neutral-900);
+    backdrop-filter: blur(5px);
+}
+
+.hamburger_nav_list {
+    flex-direction: column;
+
+    margin: 3rem;
+    gap: 2rem;
+}
+
+.hamburger_drop_shadow {
+    position: fixed;
+    /* position: sticky; */
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    top: 0;
+    left: 0;
+    text-align: end;
+    backdrop-filter: blur(3px);
+    z-index: 90;
+}
+
+.hamburger_drop_shadow button {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    height: fit-content;
+    width: fit-content;
+    margin: 1rem 2rem;
+
+    z-index: 1000;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.hamburger_nav_list + button {
+    position: fixed;
+    top: 0%;
+    background-color: transparent;
+    right: 4%;
+    outline: none;
+    border: none;
+}
+
+.hamburger_nav_list + button i {
+    font-size: 6vh;
+}
+
+/* HAMBURGER MENU ENDS */
 
 .hero_image {
     position: absolute;
