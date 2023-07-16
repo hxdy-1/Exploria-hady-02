@@ -58,17 +58,35 @@
     transform: translate(-50%, -50%);
     display: flex;
     height: 70vh;
-    width: 65vw;
+    width: 68vw;
     background-color: white;
-    border-radius: 10px;
+    border-radius: 15px;
 
-    /* background-color: var(--neutral-900); */
     background-color: var(--neutral-700);
     background-blend-mode: hard-light;
-    background-image: url("../img/flip-card1.jpeg");
-    /* background-position: cover; */
+    background-image: url("../img/eg-modal-01.jpg");
     background-size: cover;
+
+    padding: 1em;
+    /* gap: 4rem; */
+    justify-content: space-around;
+
+    transition: all var(--transition-2);
 }
+
+.xTranslated {
+    transform: translate(-170% , -50%);
+    
+}
+
+.modal_title_cont{
+    width: 60%;
+}
+
+.modal_title-1{
+    font-size: 2.2rem;
+}
+
 
 .modal_drop_shadow {
     position: fixed;
@@ -101,6 +119,40 @@
     padding: 0;
 }
 
+.modal_form{
+    flex-direction: column;
+    gap: 2.5rem;
+    padding: 1.5em;
+    border: 3px solid var(--neutral-900);
+    border: 3px solid white;
+    border-radius: 10px;
+}
+
+.modal_label {
+    gap: 2rem;
+    
+    align-self: flex-start;
+    color: white;
+    font-weight: var(--fw-normal);
+    text-shadow: 1px 1px black;
+}   
+
+.modal_label > * {
+    padding: .5em 1em;
+    border-radius: 5px;
+    border: none;
+}
+
+.modal_btn{
+    width: 70%;
+    font-weight: var(--fw-light);
+    transition: all var(--transition-2);
+
+    background-color: var(--primary-400);
+    box-shadow: 1px 1px 5px black;
+}
+
+
 /* MODAL ENDS */
 
 /* HAMBURGER MENU STARTS */
@@ -117,13 +169,17 @@
 
     right: 0;
     top: 0;
+    transform: translate(100%, 0%);
     height: 100vh;
     width: 85vw;
-    /* background-color: var(--neutral-900); */
     background-color: var(--neutral-700);
+    background-image: url('../img/hamburger_menu.jpg');
+    background-size: cover;
+    background-blend-mode: hard-light;
 
     box-shadow: -4px 0px 10px var(--neutral-900);
-    backdrop-filter: blur(5px);
+
+    transition: all var(--transition-2);
 }
 
 .hamburger_nav_list {
@@ -131,6 +187,10 @@
 
     margin: 3rem;
     gap: 2rem;
+}
+
+.ham_transition{
+    transform: translateX(0%);
 }
 
 .hamburger_drop_shadow {

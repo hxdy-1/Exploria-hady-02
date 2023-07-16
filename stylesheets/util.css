@@ -117,7 +117,16 @@ a {
 
     border-radius: var(--border-radius-xsmall);
     font-family: inherit;
+
+    transition: transform var(--transition-2), 
+    box-shadow var(--transition-2);
 }
+
+.btn:active{
+    transform: translateY(2px);
+    box-shadow: none;
+}
+
 
 .heading_extrabold {
     font-size: 6rem;

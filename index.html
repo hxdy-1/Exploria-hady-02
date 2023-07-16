@@ -320,10 +320,32 @@
         </section>
     </main>
     <!-- MODAL ASIDE -->
-    <aside class="modal_container hidden">
-        <h2 class="modal_title">SCHEDULE YOUR TRIP WITH EXPLORIA RIGHT AWAY</h2>
+    <aside class="flex_center modal_container hidden xTranslated">
+        <div class="modal_title_cont">
+            <h2 class="modal_title-1">SCHEDULE YOUR TRIP</h2>
+            <h2 class="modal_title-2">RIGHT AWAY !!!</h2>
+        </div>
         <div class="modal_form_container">
-
+            <form action="" class="flex_center modal_form">
+                <label for="name" class="flex_center | modal_label">
+                    Name 
+                    <input type="text" name="" id="modal_name">
+                </label>
+                <label for="email" class="flex_center | modal_label">
+                    Email 
+                    <input type="email" name="" id="modal_email">
+                </label>
+                <label for="package" class="flex_center | modal_label">
+                    Package 
+                    <select name="" id="modal_package">
+                        <option value="solor_traveller">Solor Traveler</option>
+                        <option value="family_lover">Family Lover</option>
+                        <option value="seasonal_pack">Seasonal Pack</option>
+                    </select>
+                </label>
+                <button type="submit" class="btn modal_btn btn_gradient">
+                    <span>BOOK NOW</span></button>
+            </form>
         </div>
     </aside>
     <aside class="modal_drop_shadow hidden">
