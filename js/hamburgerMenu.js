@@ -9,7 +9,9 @@ const navHamburgerEl = document.querySelector(".hamburger_nav_list");
 
 const toggelHamburgerMenuVisibility = () => {
     hamburgerEl.classList.toggle("hidden");
+    hamburgerEl.classList.toggle('ham_transition')
     hamburgerDropShadowEl.classList.toggle("hidden");
+
     console.log("hamburger menu got opened or closed");
 };
 
