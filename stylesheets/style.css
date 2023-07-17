@@ -1277,3 +1277,14 @@
 .custom-shape-divider-bottom-1688843615 .shape-fill {
     fill: var(--primary-600);
 }
+
+@keyframes sticky_nav_animation {
+    30% {
+        background-color: rgba(255, 255, 255, 0.839);
+        color: black;
+    }
+
+    100% {
+        background-color: rgba(87, 89, 90, .5);
+    }
+}
