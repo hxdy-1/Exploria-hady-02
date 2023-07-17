@@ -264,6 +264,11 @@ a {
     transform: translateX(-9%) translateY(-25%) rotate(45deg);
 }
 
+.manual_btn_gradient_hover.btn_gradient::after {
+    -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
+    transform: translateX(-9%) translateY(-25%) rotate(45deg);
+}
+
 /* NAVLINK HOVER EFFECT */
 
 .util_link_hover a {

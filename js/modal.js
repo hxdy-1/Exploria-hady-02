@@ -15,6 +15,14 @@ const toggelModalVisibility = () => {
     // setTimeout(function(){
     //     modalBtnEl.classList.toggle('fade')
     // },2000)
+    setTimeout(() => {
+        modalBtnEl.classList.add('manual_btn_gradient_hover');
+        
+        setTimeout(() => {
+            modalBtnEl.classList.remove('manual_btn_gradient_hover');
+        }, 550);
+    }, 800);
+
     console.log("modal got opened or closed");
 };
 
