@@ -8,12 +8,6 @@ TODO:
 
 9. Adding a linear gradient to destination and testimonial sections.
 
-14. Opening a modal (with the effects similar to Slicicious) on clicking the "Schedule now" nav button.
-
-15. Favicon
-
-17. Replicate the shadow effets of section title from linear.app
-
 
 ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 
@@ -45,4 +39,8 @@ The price title looks congested. Improve the surrounding spacing.
 
 13. Analyse and configure the margin top for each section
 
+14. Opening a modal (with the effects similar to Slicicious) on clicking the "Schedule now" nav button.
+
+15. Favicon
 16. Hamburger navbar for mobile
+17. Replicate the shadow effets of section title from linear.app
