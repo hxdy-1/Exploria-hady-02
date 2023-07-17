@@ -81,12 +81,19 @@
 
 .modal_title_cont{
     width: 60%;
+    padding: 2em;
+
+    flex-direction: column;
+    align-items: flex-start;
 }
 
-.modal_title-1{
+.modal_title-1 {
     font-size: 2.2rem;
 }
 
+.modal_title-2 {
+    font-size: 1rem;
+}
 
 .modal_drop_shadow {
     position: fixed;
@@ -119,7 +126,10 @@
     padding: 0;
 }
 
-.modal_form{
+.modal_form {
+    width: 40%;
+    align-items: flex-start;
+
     flex-direction: column;
     gap: 2.5rem;
     padding: 1.5em;
@@ -128,23 +138,39 @@
     border-radius: 10px;
 }
 
+.form_row {
+    --width-left: 30%;
+
+    width: 100%;
+
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
 .modal_label {
-    gap: 2rem;
-    
-    align-self: flex-start;
+    width: var(--width-left);
+
     color: white;
     font-weight: var(--fw-normal);
     text-shadow: 1px 1px black;
 }   
 
-.modal_label > * {
+.modal_input {
+    padding: .5em 0;
+    width: calc(100% - var(--width-left));
+}
+
+/* .modal_label > * {
     padding: .5em 1em;
     border-radius: 5px;
     border: none;
-}
+} */
 
 .modal_btn{
     width: 70%;
+    margin: auto;
+
     font-weight: var(--fw-light);
     transition: all var(--transition-2);
 
@@ -454,7 +480,7 @@
 .welcome_card {
     position: sticky;
     /* top: -15%; */
-    top: -3%;
+    top: -10%;
     /* We're hiding each card so that the threshold (of Intersection observer) approves the disappearance of the current card. */
 
     width: 100%;
@@ -1280,7 +1306,7 @@
 
 @keyframes sticky_nav_animation {
     30% {
-        background-color: rgba(255, 255, 255, 0.839);
+        background-color: rgba(255, 255, 255, 0.539);
         color: black;
     }
 

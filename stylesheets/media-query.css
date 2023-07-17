@@ -4,7 +4,7 @@
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 450px) {
     .navbar {
         padding: 0 0.8em;
         align-items: center;
