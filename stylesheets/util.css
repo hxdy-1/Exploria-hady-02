@@ -120,15 +120,13 @@ a {
     border-radius: var(--border-radius-xsmall);
     font-family: inherit;
 
-    transition: transform var(--transition-2), 
-    box-shadow var(--transition-2);
+    transition: transform var(--transition-2), box-shadow var(--transition-2);
 }
 
-.btn:active{
+.btn:active {
     transform: translateY(2px);
     box-shadow: none;
 }
-
 
 .heading_extrabold {
     font-size: 6rem;
@@ -148,21 +146,19 @@ a {
 .word_highlight {
     display: block;
     /* background-image: linear-gradient(#39b385, #9be15d); */
-    
+
     border-radius: 5px;
-    
+
     transform: skewX(-15deg);
-    
+
     width: fit-content;
     margin: auto;
     padding: 0 0.15em;
-    
+
     position: relative;
-    
 }
 
-.welcome_section .word_highlight{
-    
+.welcome_section .word_highlight {
     background-image: linear-gradient(#39b385, #9be15d);
 }
 
@@ -170,8 +166,8 @@ a {
     transform: skewX(15deg);
 }
 
-.word_highlight::before{
-    content: '';
+.word_highlight::before {
+    content: "";
     background-image: linear-gradient(#39b385, #9be15d);
     border-radius: 5px;
     inset: 0;
@@ -184,7 +180,7 @@ a {
 .fade_gradient.word_highlight::before {
     opacity: 1;
     transform: scale(1);
-} 
+}
 
 .text_center {
     text-align: center;
@@ -218,7 +214,11 @@ a {
 }
 
 .section_grad {
-    background-image: linear-gradient(to top left, rgba(255, 255, 255, 0.057), rgba(0, 0, 0, .1));
+    background-image: linear-gradient(
+        to top left,
+        rgba(255, 255, 255, 0.057),
+        rgba(0, 0, 0, 0.1)
+    );
 }
 
 /* button hover effect */
@@ -243,7 +243,8 @@ a {
     position: absolute;
     left: 0;
     top: 0;
-    height: 490%;
+    /* height: 490%; */
+    height: 35vh;
     width: 140%;
     /* background: rgb(35, 154, 171); */
     background-image: linear-gradient(
@@ -323,3 +324,30 @@ a {
 }
 
 /* NAVLINK HOVER EFFECT END */
+
+/* CUSTOM SCROLLBAR */
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 4px;
+    background-color: transparent;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 3px var(--neutral-700);
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--primary-400);
+    border-radius: 4px;
+    cursor: grab;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-600);
+}
