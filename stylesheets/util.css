@@ -218,15 +218,7 @@ a {
 }
 
 .section_grad {
-    background: linear-gradient(
-        /* to bottom right, */
-            /* rgba(0, 14, 5, 0) 0%,
-        rgb(177, 237, 153) 100% */
-            /* rgb(0, 14, 5) 0%,
-        rgb(60, 74, 55) 50%,
-        rgb(46, 58, 41) 100% */
-            /* 135deg, var(--neutral-900), var(--primary-600) */
-    );
+    background-image: linear-gradient(to top left, rgba(255, 255, 255, 0.057), rgba(0, 0, 0, .1));
 }
 
 /* button hover effect */
