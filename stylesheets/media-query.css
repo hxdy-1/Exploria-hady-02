@@ -222,6 +222,8 @@
     .price_card-2::before {
         bottom: -10%;
         left: -60%;
+
+        transition: 0s;
     }
 
     /* TESTIMONIAL SECTION */
